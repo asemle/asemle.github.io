@@ -764,11 +764,12 @@ aside.clients {
 }
 aside.clients img {
   width: 100%;
-  margin: 5px 0 5px 0;
+  margin: 0 0 5px 0;
 }
 .skill {
   margin-top: 15px;
-  max-width: 45%;
+  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #777;
 }
 .skill svg {
   max-width: 100%;
