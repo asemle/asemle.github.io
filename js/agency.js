@@ -31,6 +31,7 @@
             top: foo - 60
         }
     })
+    if($(window).width() > 500) {
     var scrolling = false;
     $('header').mousemove(function( event ) {
       if(!scrolling) {
@@ -49,7 +50,8 @@
       scrolling = false;
         console.log("Haven't scrolled in 250ms!");
     }, 300));
-});
+  });
+  }
 
 
 

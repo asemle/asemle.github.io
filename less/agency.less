@@ -54,7 +54,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bg-light-gray {
-    background-color: @gray-lighter;
+    background-image: url(../img/hard-wood-floor-2.jpg);
+    background-attachment: fixed;
+    background-repeat: repeat;
 }
 
 .bg-darkest-gray {
@@ -175,7 +177,7 @@ header {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
-    background-size: 300%;
+    background-size: cover;
     // .background-cover;
     text-align: center;
     color: white;
@@ -201,6 +203,7 @@ header {
 
 @media(min-width:768px) {
     header {
+      background-size: 300%;
         .intro-text {
             padding-top: 300px;
             padding-bottom: 200px;
@@ -260,8 +263,6 @@ section {
 // Portfolio Section
 
 #portfolio {
-  background: url("../img/hard-wood-floor-2.jpg") repeat;
-  background-attachment: fixed;
     .portfolio-item {
         margin: 0 0 15px;
         right: 0;

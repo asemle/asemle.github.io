@@ -13,32 +13,32 @@
 .red {
     background-color: #D90012;
     border-radius: 241px 0px 0px 0px;
-    margin-bottom: 9px;
-    margin-right: 9px;
+    margin-bottom: 1.8%;
+    margin-right: 1.8%;
     box-shadow: -3px -3px 0px 3px #AE000E;
 }
 
 .blue {
     background-color: #04419E;
     border-radius: 0px 0px 0px 241px;
-    margin-top: 9px;
-    margin-right: 9px;
+    margin-top: 1.8%;
+    margin-right: 1.8%;
     box-shadow: -3px 3px 0px 3px #03347E;
 }
 
 .green {
     background-color: #01983B;
     border-radius: 0px 241px 0px 0px;
-    margin-left: 9px;
-    margin-bottom: 9px;
+    margin-left: 1.8%;
+    margin-bottom: 1.8%;
     box-shadow: 3px -3px 0px 3px #017A2F;
 }
 
 .yellow {
     background-color: #C78D00;
     border-radius: 0px 0px 241px 0px;
-    margin-left: 9px;
-    margin-top: 9px;
+    margin-left: 1.8%;
+    margin-top: 1.8%;
     box-shadow: 3px 3px 0px 3px #9F7100;
 }
 
@@ -169,4 +169,43 @@ button:active {
 .flash {
     background-color: purple;
     box-shadow: 3px 4px 100px 10px purple;
+}
+
+@media (max-width: 500px) {
+  .canvas {
+    width: 100vw;
+    height: 100vw;
+    padding: 5%;
+    .box {
+      width: 43vw;
+      height: 43vw;
+    }
+    .simonCircle {
+      width: 48%;
+      height: 48%;
+      top: 26%;
+      left: 26%;
+      .upperCircle {
+        height: 45.83%;
+        width: 90%;
+        margin: 7.5% auto;
+        span {
+          top: 20.83%;
+          left: 12.5%;
+          height: 29.3%;
+          font-size: 13.2vw;
+        }
+      }
+      .bottomCircle {
+        height: 15%;
+        margin-top: -3.3%;
+        .scoreBox {
+          left: 29.16%;
+        }
+        .power {
+          right: 29.16%;
+        }
+      }
+    }
+  }
 }
