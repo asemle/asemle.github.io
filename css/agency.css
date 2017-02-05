@@ -493,9 +493,15 @@ section h3.section-subheading {
     padding: 150px 0;
   }
 }
+#services {
+  background: #f5f5f5;
+}
 .service-heading {
   margin: 15px 0;
   text-transform: none;
+}
+#portfolio h3.section-subheading {
+  color: white;
 }
 #portfolio .portfolio-item {
   margin: 0 0 15px;
@@ -561,6 +567,9 @@ section h3.section-subheading {
   #portfolio .portfolio-item {
     margin: 0 0 30px;
   }
+}
+#about {
+  background: #f5f5f5;
 }
 .timeline {
   list-style: none;
@@ -749,8 +758,20 @@ section h3.section-subheading {
 .team-member p {
   margin-top: 0;
 }
+aside.clients {
+  padding: 50px 0 50px 0;
+  text-align: center;
+}
 aside.clients img {
-  margin: 50px auto;
+  width: 100%;
+  margin: 5px 0 5px 0;
+}
+.skill {
+  margin-top: 15px;
+  max-width: 45%;
+}
+.skill svg {
+  max-width: 100%;
 }
 section#contact {
   background-color: #6688aa;
