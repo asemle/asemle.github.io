@@ -1,6 +1,6 @@
 @import "variables.less";
 @import "mixins.less";
-
+@import "simon.less";
 // Global Components
 
 body {
@@ -110,6 +110,7 @@ h1, h2, h3, h4, h5, h6 {
     .nav {
         li {
             a {
+              pointer-events: auto;
                 .heading-font;
                 font-weight: 400;
                 letter-spacing: 1px;
@@ -142,14 +143,17 @@ h1, h2, h3, h4, h5, h6 {
         -moz-transition: padding 0.3s;
         transition: padding 0.3s;
         border: none;
+        pointer-events: none;
         .navbar-brand {
             font-size: 2em;
             -webkit-transition: all 0.3s;
             -moz-transition: all 0.3s;
             transition: all 0.3s;
+            pointer-events: auto;
         }
         .navbar-nav>.active>a {
             border-radius: 3px;
+
         }
     }
 }
@@ -171,6 +175,7 @@ header {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
+    background-size: 300%;
     // .background-cover;
     text-align: center;
     color: white;
@@ -237,6 +242,9 @@ section {
 }
 
 @media(min-width:768px) {
+  #portfolio {
+
+  }
     section {
         padding: 150px 0;
     }
@@ -252,6 +260,8 @@ section {
 // Portfolio Section
 
 #portfolio {
+  background: url("../img/hard-wood-floor-2.jpg") repeat;
+  background-attachment: fixed;
     .portfolio-item {
         margin: 0 0 15px;
         right: 0;
@@ -506,7 +516,10 @@ section {
 }
 
 // Team Section
-
+#team {
+  text-align: center;
+  line-height: normal;
+}
 .team-member {
     text-align: center;
     margin-bottom: 50px;
@@ -712,6 +725,8 @@ ul.social-buttons {
         display: none;
     }
 }
+
+
 
 // Highlight Color Customization
 

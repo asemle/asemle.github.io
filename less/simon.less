@@ -1,0 +1,172 @@
+.canvas {
+    background-color: #222021;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    padding: 25px;
+    margin: auto;
+    border-radius: 100%;
+    box-shadow: 14px 12px 9px 1px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+}
+
+.red {
+    background-color: #D90012;
+    border-radius: 241px 0px 0px 0px;
+    margin-bottom: 9px;
+    margin-right: 9px;
+    box-shadow: -3px -3px 0px 3px #AE000E;
+}
+
+.blue {
+    background-color: #04419E;
+    border-radius: 0px 0px 0px 241px;
+    margin-top: 9px;
+    margin-right: 9px;
+    box-shadow: -3px 3px 0px 3px #03347E;
+}
+
+.green {
+    background-color: #01983B;
+    border-radius: 0px 241px 0px 0px;
+    margin-left: 9px;
+    margin-bottom: 9px;
+    box-shadow: 3px -3px 0px 3px #017A2F;
+}
+
+.yellow {
+    background-color: #C78D00;
+    border-radius: 0px 0px 241px 0px;
+    margin-left: 9px;
+    margin-top: 9px;
+    box-shadow: 3px 3px 0px 3px #9F7100;
+}
+
+.redLight {
+    background-color: #FF0113;
+    box-shadow: -3px -4px 100px 10px red, -3px -3px 0px 3px #FF0113;
+}
+
+.blueLight {
+    background-color: #0066CB;
+    box-shadow: -3px 3px 0px 3px #0066CB, -3px 4px 100px 10px blue;
+}
+
+.greenLight {
+    background-color: #00CA5C;
+    box-shadow: 3px -3px 0px 3px #00CA5C, 3px -4px 100px 10px green;
+}
+
+.yellowLight {
+    background-color: #FAE800;
+    box-shadow: 3px 4px 100px 10px yellow, 3px 3px 0px 3px #F3C500;
+}
+
+.simonCircle {
+    position: absolute;
+    left: 130px;
+    top: 130px;
+    height: 240px;
+    width: 240px;
+    border-radius: 100%;
+    background-color: #222021;
+}
+
+.upperCircle {
+    height: 110px;
+    width: 216px;
+    margin: 18px auto;
+    background: url("../media/Screen Shot 2016-12-26 at 12.13.20 AM.png");
+    border-top-left-radius: 1000px;
+    border-top-right-radius: 1000px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    text-align: center;
+}
+
+.upperCircle span {
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    color: white;
+    height: 70px;
+    font-size: 70px;
+    font-family: "pricedown", sans-serif;
+    overflow: hidden;
+}
+
+.bottomCircle {
+    height: 36px;
+    position: relative;
+    margin-top: -8px;
+}
+
+.scoreBox {
+    position: absolute;
+    top: 0;
+    left: 70px;
+    height: 26px!important;
+    width: 30px!important;
+    background-color: #4B4F38;
+    border-radius: 2px;
+    border-top: 8px solid #1D1A11;
+    border-left: 4px solid #2E3120;
+    border-right: 2px solid #3C3C40;
+    border-bottom: 2px solid #3C3C40;
+    text-align: center;
+}
+
+#score {
+    font-family: monospace;
+    text-align: center;
+    font-size: 16px;
+}
+
+.power {
+    position: absolute;
+    right: 70px;
+    border-radius: 100%;
+    height: 24px;
+    width: 24px;
+    background-color: #02B92D;
+    align-self: center;
+    display: inline-block;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border-style: inset;
+    border-color: #222021;
+}
+
+@font-face {
+    font-family: "pricedown";
+    src: url(../media/pricedown.ttf);
+}
+
+button {
+    background-color: #222021;
+    color: white;
+    border: 10px;
+    border-color: #222021;
+    border-style: outset;
+    font-size: 18px;
+    font-family: monospace, sans-serif;
+    font-weight: bold;
+    margin-right: 20px;
+    outline: none;
+}
+
+button:active {
+    border-style: inset;
+    color: #02B92D;
+}
+
+.box {
+    width: 216px;
+    height: 216px;
+    float: left;
+}
+
+.flash {
+    background-color: purple;
+    box-shadow: 3px 4px 100px 10px purple;
+}

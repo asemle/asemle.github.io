@@ -31,18 +31,24 @@
             top: foo - 60
         }
     })
+    var scrolling = false;
+    $('header').mousemove(function( event ) {
+      if(!scrolling) {
+      var containerWidth = $(this).innerWidth(),
+      containerHeight = $(this).innerHeight(),
+      mousePositionX = (event.pageX / containerWidth) * 100,
+      mousePositionY = (event.pageY / containerHeight) * 100;
+      $(this).css('background-position', mousePositionX + '%' + ' ' + mousePositionY + '%');
+      }
+    });
+
     $(window).scroll(function() {
     clearTimeout($.data(this, 'scrollTimer'));
+    scrolling = true;
     $.data(this, 'scrollTimer', setTimeout(function() {
-      $('header').mousemove(function( event ) {
-        var containerWidth = $(this).innerWidth(),
-        containerHeight = $(this).innerHeight(),
-        mousePositionX = (event.pageX / containerWidth) * 100,
-        mousePositionY = (event.pageY /containerHeight) * 100;
-        $(this).css('background-position', mousePositionX + '%' + ' ' + mousePositionY + '%');
-      });
+      scrolling = false;
         console.log("Haven't scrolled in 250ms!");
-    }, 250));
+    }, 300));
 });
 
 
