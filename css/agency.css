@@ -394,7 +394,7 @@ fieldset[disabled] .btn-xl.active {
   margin-bottom: 50px;
 }
 .carousel-cell {
-  height: 57vw;
+  height: 56vw;
   width: 100%;
   height: auto;
 }
@@ -969,4 +969,10 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #CC8800;
+}
+@media (max-width: 400px) {
+  header {
+    background-attachment: scroll;
+    background-size: 300%;
+  }
 }
