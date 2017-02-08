@@ -973,6 +973,6 @@ body {
 @media (max-width: 400px) {
   header {
     background-attachment: scroll;
-    background-size: 300%;
+    background-size: cover;
   }
 }
