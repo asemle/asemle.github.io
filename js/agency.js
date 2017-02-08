@@ -48,11 +48,61 @@
     scrolling = true;
     $.data(this, 'scrollTimer', setTimeout(function() {
       scrolling = false;
-        console.log("Haven't scrolled in 250ms!");
     }, 300));
   });
   }
+    $('.main-carousel').flickity({
+      cellSelector: '.carousel-cell',
+      cellAlign: 'left',
+      wrapAround: true,
+      prevNextButtons: false,
+      imagesLoaded: true,
+      // setGallerySize: false,
+      // lazyload: true,
+    });
+  $('.portfolio-modal').on( 'shown.bs.modal', function( event ) {
+    $('.main-carousel').flickity('resize');
+  });
+  var image_url = $('header').css('background-image'),
+    image;
 
+// Remove url() or in case of Chrome url("")
+image_url = image_url.match(/^url\("?(.+?)"?\)$/);
+
+if (image_url[1]) {
+    image_url = image_url[1];
+    image = new Image();
+
+    // just in case it is not already loaded
+    $(document).load(function () {
+        console.log(image.width + 'x' + image.height);
+    });
+
+    image.src = image_url;
+}
+$(window).on("load", function() {
+  var dob = new Date(91, 6, 14);
+  var today = new Date();
+  var age = Math.floor((today-dob) / (365.25 * 24 * 60 * 60 * 1000));
+  var month = today.getMonth() + 6;
+  var mtext;
+  var monthText = function() {
+    if(month > 12) {
+      month -= 12;
+      return " as of " + month + "months ago.";
+    }
+    if(month === 12) {
+      return ". Soon I'll be " + age + 1 +".";
+    }
+    else  {
+      return ", as of " + month + " months ago.";
+    }
+  }
+  console.log(monthText());
+  console.log(age);
+  $('#age').text(age);
+  $('#months').text(monthText());
+})
 
 
 })(jQuery); // End of use strict
