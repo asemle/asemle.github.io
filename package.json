@@ -27,5 +27,8 @@
   },
   "scripts": {
     "start": "./"
+  },
+  "dependencies": {
+    "express": "^4.14.1"
   }
 }
