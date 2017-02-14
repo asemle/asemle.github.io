@@ -338,6 +338,9 @@ fieldset[disabled] .btn-xl.active {
   color: #CC8800;
   background-color: white;
 }
+.btn-xl:focus {
+  background: none!important;
+}
 .navbar-custom {
   background-color: #6688aa;
   border-color: transparent;
@@ -470,6 +473,9 @@ header .btn-xl {
 header .btn-xl:hover {
   color: #960;
   background: none;
+}
+header .btn-xl:focus {
+  background-color: none!important;
 }
 @media (min-width: 768px) {
   header {
