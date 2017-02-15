@@ -13,7 +13,6 @@ app.use(bodyParser.json());
 
 
 app.post('/contact', function (req, res) {
-  console.log
   var mailOpts;
    //Setup Nodemailer transport, I chose gmail. Create an application-specific password to avoid problems.
    var options = {
