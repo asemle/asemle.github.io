@@ -13,6 +13,7 @@ app.use(bodyParser.json());
 
 
 app.post('/contact', function (req, res) {
+  console.log(req.body)
   var mailOpts;
    //Setup Nodemailer transport, I chose gmail. Create an application-specific password to avoid problems.
    var options = {
@@ -27,7 +28,7 @@ app.post('/contact', function (req, res) {
    var transporter = nodeMailer.createTransport(smtpTransport(options))
    //Mail options
    mailOpts = {
-       from: req.body.email , //grab form data from the request body object
+       from: req.body.email, //grab form data from the request body object
        to: process.env.user,
        subject: req.body.name + " contacted you from asemle portfolio",
        text: req.body.message,
