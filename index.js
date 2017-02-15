@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({
 
 
 app.post('/contact', function (req, res) {
-  console.log(req)
+  console.log(req.body.message)
   var mailOpts;
    //Setup Nodemailer transport, I chose gmail. Create an application-specific password to avoid problems.
    var options = {
@@ -34,8 +34,7 @@ app.post('/contact', function (req, res) {
        from: req.body.email, //grab form data from the request body object
        to: process.env.user,
        subject: req.body.name + " contacted you from asemle portfolio",
-       text: req.body.message,
-       html: '<b>' + req.body.email + '</b>'+'</br>'+'<b>' + req.body.phone + '</b>',
+       html:'<p>'+ req.body.message + '</p> <br>' + '<b>' + req.body.email + '</b> <br> <b>' + req.body.phone + '</b>',
    };
    transporter.sendMail(mailOpts, function (error, response) {
        //Email not sent
