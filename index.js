@@ -10,10 +10,13 @@ var app = express();
 
 app.use(express.static(__dirname));
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 
 
 app.post('/contact', function (req, res) {
-  console.log(req.body)
+  console.log(req)
   var mailOpts;
    //Setup Nodemailer transport, I chose gmail. Create an application-specific password to avoid problems.
    var options = {
