@@ -14,6 +14,45 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 
+// var fs = require('fs');
+// var file = fs.readFileSync("AAA.txt", "utf8");
+// console.log(subranges(file));
+//
+// function subranges(input) {
+//
+// input = input.replace(/\n/g, " ");
+//   var n = parseInt(input.split(" ")[0]);
+//   var k = parseInt(input.split(" ")[1]);
+//   var arr = input.split(" ").slice(2);
+//
+//   for(var i = 0; i <= arr.length - k; i++) {
+//     var inc = 0;
+//     var dec = 0;
+//     var sub = arr.slice(i, i + k);
+//
+//     for(var j = 0; j < sub.length - 1; j++) {
+//       if(sub[j] < sub[j + 1]) {
+//         var l = j;
+//
+//         while(sub[l] < sub[l + 1]) {
+//           inc++;
+//           l++;
+//         }
+//       } else if(sub[j] > sub[j + 1]) {
+//         var m = j;
+//
+//
+//         while(sub[m] > sub[m + 1]) {
+//           dec++;
+//           m++;
+//         }
+//       }
+//     }
+//
+//     console.log(inc - dec);
+//   }
+//   return "";
+// }
 
 app.post('/contact', function (req, res) {
   console.log(req.body.message)
