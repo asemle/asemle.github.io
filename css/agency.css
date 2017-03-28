@@ -343,11 +343,12 @@ fieldset[disabled] .btn-xl.active {
   background: none!important;
 }
 .navbar-custom {
-  background-color: #6688aa;
+  background-color: #346758;
+  opacity: 0.97;
   border-color: transparent;
 }
 .navbar-custom .navbar-brand {
-  color: #CC8800;
+  color: aliceblue;
   font-family: "Permanent Marker", "Helvetica Neue", Helvetica, Arial, cursive;
 }
 .navbar-custom .navbar-brand:hover,
@@ -429,7 +430,7 @@ fieldset[disabled] .btn-xl.active {
 }
 @media (min-width: 768px) {
   .navbar-custom.affix {
-    background-color: #6688aa;
+    background-color: #346758;
     padding: 10px 0;
   }
   .navbar-custom.affix .navbar-brand {
@@ -793,7 +794,7 @@ aside.clients img {
   max-width: 100%;
 }
 section#contact {
-  background-color: #6688aa;
+  background-color: #346758;
   background-image: url('../img/map-image.png');
   background-position: center;
   background-repeat: no-repeat;
@@ -871,7 +872,7 @@ ul.social-buttons {
 ul.social-buttons li a {
   line-height: 36px;
   display: block;
-  background-color: #6688aa;
+  background-color: #346758;
   height: 37px;
   width: 37px;
   border-radius: 15%;
