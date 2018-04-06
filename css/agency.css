@@ -435,6 +435,12 @@ fieldset[disabled] .btn-xl.active {
   height: 100%;
   position: absolute;
   top: 0;
+  overflow: hidden;
+}
+.decolineleft,
+.decolinetop {
+  position: absolute;
+  background: #2C2C2C;
 }
 @media (min-width: 768px) {
   .navbar-custom.affix {
@@ -830,7 +836,6 @@ aside.clients img {
 section#contact {
   position: relative;
   background-color: black;
-  background-image: url('../img/map-image.png');
   background-position: center;
   background-repeat: no-repeat;
 }

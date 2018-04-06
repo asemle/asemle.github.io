@@ -20,4 +20,7 @@ sr.reveal('#backend', {origin: 'right', distance: '100vw'});
 
     sr.reveal('.social-buttons', { duration: 2000, distance: '0', scale:0.01})
 
+    sr.reveal('.decolineleft', { opacity: 1, viewFactor: 0.5, duration: 3000, distance: '100vw', origin: 'left'}, 100)
+
+    sr.reveal('.decolinetop', { opacity: 1, viewFactor: 0.5, duration: 3000, distance: '100%', origin: 'top'}, 100)
 })

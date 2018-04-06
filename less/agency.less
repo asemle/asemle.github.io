@@ -218,10 +218,12 @@ h6 {
     height: 100%;
     position: absolute;
     top: 0;
+    overflow: hidden;
 } 
 
-.decoline {
+.decolineleft, .decolinetop {
     position: absolute;
+    background: #2C2C2C;
 }
 // Navbar Change on Scroll
 @media(min-width:768px) {
@@ -670,7 +672,6 @@ aside.clients {
 section#contact {
     position: relative;
     background-color: black;
-    background-image: url('../img/map-image.png');
     background-position: center;
     background-repeat: no-repeat;
     .section-heading {
