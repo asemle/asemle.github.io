@@ -1,3 +1,4 @@
+require('dotenv').config();
 var express = require('express');
 var nodeMailer = require('nodemailer');
 var smtpTransport = require('nodemailer-smtp-transport');
