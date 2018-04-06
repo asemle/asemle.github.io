@@ -2,7 +2,6 @@
 @import "mixins.less";
 @import "simon.less";
 // Global Components
-
 body {
     overflow-x: hidden;
     .body-font;
@@ -17,8 +16,8 @@ body {
 }
 
 p {
-    font-size: 14px;
-    line-height: 1.75;
+    font-size: 16px;
+    line-height: 1.75
 }
 
 p.large {
@@ -44,7 +43,12 @@ a.active {
     color: darken(@theme-primary, 10%);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     .heading-font;
     font-weight: 700;
 }
@@ -64,30 +68,32 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // Restyled Primary Buttons
-
 .btn-primary {
-    .button-variant(white; @theme-primary; @theme-primary);
+    .button-variant(white;
+    @theme-primary;
+    @theme-primary);
     .heading-font;
     font-weight: 700;
     margin-right: 0;
 }
 
 .btn-xl {
-    .button-variant(white; @theme-primary; @theme-primary);
+    .button-variant(white;
+    @theme-primary;
+    @theme-primary);
     .heading-font;
     font-weight: 700;
     border-radius: 3px;
     font-size: 18px;
     padding: 20px 40px;
     &:focus {
-      background: none!important;
+        background: none !important;
     }
 }
 
 // Custom Navigation Bar
-
 .navbar-custom {
-    background-color: #346758;
+    background-color: black;
     opacity: 0.97;
     border-color: transparent;
     .navbar-brand {
@@ -117,7 +123,7 @@ h1, h2, h3, h4, h5, h6 {
     .nav {
         li {
             a {
-              pointer-events: auto;
+                pointer-events: auto;
                 .heading-font;
                 font-weight: 400;
                 letter-spacing: 1px;
@@ -168,19 +174,19 @@ h1, h2, h3, h4, h5, h6 {
 //     }
 // }
 .main-carousel {
-  margin-bottom: 50px;
+    margin-bottom: 50px;
 }
+
 .carousel-cell {
-
-  height: 56vw;
-
-  width: 100%;
-  height: auto;
-  img {
+    height: 56vw;
     width: 100%;
-    height: 100%;
-  }
+    height: auto;
+    img {
+        width: 100%;
+        height: 100%;
+    }
 }
+
 @media(min-width:768px) {
     .navbar-custom {
         background-color: transparent;
@@ -199,16 +205,14 @@ h1, h2, h3, h4, h5, h6 {
         }
         .navbar-nav>.active>a {
             border-radius: 3px;
-
         }
     }
 }
 
 // Navbar Change on Scroll
-
 @media(min-width:768px) {
     .navbar-custom.affix {
-        background-color: #346758;
+        background-color: black;
         padding: 10px 0;
         .navbar-brand {
             font-size: 1.5em;
@@ -217,12 +221,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
+    border-bottom: 10px groove grey;
+    border-top: 10px ridge grey;
+    border-left: 5px solid #2C2C2C;
+    border-right: 5px solid #2C2C2C;
     background-image: url('../img/header-bg.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
-    background-size: cover;
-    // .background-cover;
+    background-size: cover; // .background-cover;
     text-align: center;
     color: white;
     .intro-text {
@@ -241,29 +248,27 @@ header {
             font-size: 50px;
             line-height: 50px;
             margin-bottom: 25px;
-
-
         }
     }
     .btn-xl {
-      padding:0;
-      font-size:90px;
-      border:none;
-      color: #c80;
-      background: none;
-      &:hover {
-        color: #960;
+        padding: 0;
+        font-size: 90px;
+        border: none;
+        color: #c80;
         background: none;
-      }
-      &:focus {
-        background-color: none!important;
-      }
+        &:hover {
+            color: #960;
+            background: none;
+        }
+        &:focus {
+            background-color: none !important;
+        }
     }
 }
 
 @media(min-width:768px) {
     header {
-      background-size: 400%;
+        background-size: 400%;
         .intro-text {
             padding-top: 300px;
             padding-bottom: 200px;
@@ -286,7 +291,6 @@ header {
 }
 
 // Global Section Styles
-
 section {
     padding: 100px 0;
     h2.section-heading {
@@ -305,9 +309,7 @@ section {
 }
 
 @media(min-width:768px) {
-  #portfolio {
-
-  }
+    #portfolio {}
     section {
         padding: 150px 0;
     }
@@ -315,7 +317,7 @@ section {
 
 // Services Section
 #services {
-  background: #f5f5f5;
+    background: #f5f5f5;
 }
 
 .service-heading {
@@ -324,15 +326,18 @@ section {
 }
 
 // Portfolio Section
-
 #portfolio {
-  h2.section-heading {
-    color: #CC8800;
-  }
-  h3.section-subheading {
-    color: white;
-    opacity: 0;
-  }
+    border-left: 5px solid #2c2c2c;
+    border-right: 5px solid #2c2c2c;
+    border-bottom: 10px groove grey;
+    border-top: 10px ridge grey;
+    h2.section-heading {
+        color: #CC8800;
+    }
+    h3.section-subheading {
+        color: white;
+        opacity: 0;
+    }
     .portfolio-item {
         margin: 0 0 15px;
         right: 0;
@@ -405,7 +410,7 @@ section {
 
 // Timeline
 #about {
-  background: #f5f5f5;
+    background: #f5f5f5;
 }
 
 .timeline {
@@ -422,7 +427,7 @@ section {
         left: 40px;
         margin-left: -1.5px;
     }
-    > li {
+    >li {
         margin-bottom: 50px;
         position: relative;
         min-height: 50px;
@@ -471,7 +476,7 @@ section {
                 line-height: 12px;
             }
         }
-        &.timeline-inverted > .timeline-panel {
+        &.timeline-inverted>.timeline-panel {
             float: right;
             text-align: left;
             padding: 0 20px 0 100px;
@@ -502,8 +507,8 @@ section {
         }
     }
     .timeline-body {
-        > p,
-        > ul {
+        >p,
+        >ul {
             margin-bottom: 0;
         }
     }
@@ -514,7 +519,7 @@ section {
         &:before {
             left: 50%;
         }
-        > li {
+        >li {
             margin-bottom: 100px;
             min-height: 100px;
             .timeline-panel {
@@ -534,7 +539,7 @@ section {
                     line-height: 16px;
                 }
             }
-            &.timeline-inverted > .timeline-panel {
+            &.timeline-inverted>.timeline-panel {
                 float: right;
                 text-align: left;
                 padding: 0 30px 20px 20px;
@@ -545,7 +550,7 @@ section {
 
 @media(min-width:992px) {
     .timeline {
-        > li {
+        >li {
             min-height: 150px;
             .timeline-panel {
                 padding: 0 20px 20px;
@@ -560,7 +565,7 @@ section {
                     line-height: 26px;
                 }
             }
-            &.timeline-inverted > .timeline-panel {
+            &.timeline-inverted>.timeline-panel {
                 padding: 0 20px 20px;
             }
         }
@@ -569,7 +574,7 @@ section {
 
 @media(min-width:1200px) {
     .timeline {
-        > li {
+        >li {
             min-height: 170px;
             .timeline-panel {
                 padding: 0 20px 20px 100px;
@@ -582,7 +587,7 @@ section {
                     margin-top: 18px;
                 }
             }
-            &.timeline-inverted > .timeline-panel {
+            &.timeline-inverted>.timeline-panel {
                 padding: 0 100px 20px 20px;
             }
         }
@@ -591,9 +596,14 @@ section {
 
 // Team Section
 #simon {
-  text-align: center;
-  line-height: normal;
+    text-align: center;
+    line-height: normal;
+    border-bottom: 10px groove grey;
+    border-top: 10px ridge grey;
+    border-left: 5px solid #2c2c2c;
+    border-right: 5px solid #2c2c2c;
 }
+
 // .team-member {
 //     text-align: center;
 //     margin-bottom: 50px;
@@ -610,30 +620,41 @@ section {
 //         margin-top: 0;
 //     }
 // }
+#skills {
+    background-color: #ededed;
+    p {
+        font-size: 20px;
+        line-height: 1.75;
+        margin-bottom: 50px;
+    }
+    h4 {
+        font-size: 22px;
+    }
+}
 
 // Clients Aside
-
 aside.clients {
-  padding: 50px 0 50px 0;
-  text-align: center;
+    background-color: #ededed;
+    padding: 50px 0 50px 0;
+    text-align: center;
     img {
-      width: 100%;
+        width: 100%;
         margin: 0 0 5px 0;
     }
 }
-.skill {
-  margin-top: 15px;
-  // max-width: 45%;
-  font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
-  color: #777;
-  svg {
-    max-width: 100%;
-  }
-}
-// Contact Section
 
+.skill {
+    margin-top: 15px; // max-width: 45%;
+    font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #777;
+    svg {
+        max-width: 100%;
+    }
+}
+
+// Contact Section
 section#contact {
-    background-color: #346758;
+    background-color: black;
     background-image: url('../img/map-image.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -658,24 +679,26 @@ section#contact {
         box-shadow: none;
     }
     ::-webkit-input-placeholder {
-       .heading-font;
-       font-weight: 700;
-       color: @gray-lighter;
+        .heading-font;
+        font-weight: 700;
+        color: @gray-lighter;
     }
-    :-moz-placeholder { /* Firefox 18- */
-       .heading-font;
-       font-weight: 700;
-       color: @gray-lighter;
+    :-moz-placeholder {
+        /* Firefox 18- */
+        .heading-font;
+        font-weight: 700;
+        color: @gray-lighter;
     }
-    ::-moz-placeholder {  /* Firefox 19+ */
-       .heading-font;
-       font-weight: 700;
-       color: @gray-lighter;
+    ::-moz-placeholder {
+        /* Firefox 19+ */
+        .heading-font;
+        font-weight: 700;
+        color: @gray-lighter;
     }
     :-ms-input-placeholder {
-       .heading-font;
-       font-weight: 700;
-       color: @gray-lighter;
+        .heading-font;
+        font-weight: 700;
+        color: @gray-lighter;
     }
     .text-danger {
         color: @theme-danger;
@@ -683,8 +706,8 @@ section#contact {
 }
 
 // Footer
-
 footer {
+    background-color: grey;
     padding: 1px 0;
     text-align: center;
     span.copyright {
@@ -701,18 +724,18 @@ footer {
 }
 
 // Social Buttons
-
 ul.social-buttons {
-  text-align: right;
     margin-bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
     li {
         a {
             line-height: 36px;
             display: block;
-            background-color: #346758;
+            background-color: black;
             height: 37px;
-            width: 37px;
-            border-radius: 15%;
+            width: 45px;
+            border-radius: 10%;
             font-size: 20px;
             color: white;
             outline: none;
@@ -739,7 +762,7 @@ ul.social-buttons {
 }
 
 .portfolio-modal {
-    .modal-dialog{
+    .modal-dialog {
         margin: 0;
         height: 100%;
         width: auto;
@@ -769,16 +792,15 @@ ul.social-buttons {
         ul.list-inline {
             margin-bottom: 30px;
             margin-top: 0;
-        }
-        // img {
+        } // img {
         //     margin-bottom: 30px;
         // }
     }
     .close-modal {
         position: absolute;
-        width:75px;
-        height:75px;
-        background-color:transparent;
+        width: 75px;
+        height: 75px;
+        background-color: transparent;
         top: 25px;
         right: 25px;
         cursor: pointer;
@@ -786,26 +808,26 @@ ul.social-buttons {
             opacity: 0.3;
         }
         .lr {
-            height:75px;
-            width:1px;
-            margin-left:35px;
-            background-color:#6688aa;
+            height: 75px;
+            width: 1px;
+            margin-left: 35px;
+            background-color: #6688aa;
             transform: rotate(45deg);
             -ms-transform: rotate(45deg);
             /* IE 9 */
             -webkit-transform: rotate(45deg);
             /* Safari and Chrome */
-            z-index:1051;
+            z-index: 1051;
             .rl {
-                height:75px;
-                width:1px;
-                background-color:#6688aa;
+                height: 75px;
+                width: 1px;
+                background-color: #6688aa;
                 transform: rotate(90deg);
                 -ms-transform: rotate(90deg);
                 /* IE 9 */
                 -webkit-transform: rotate(90deg);
                 /* Safari and Chrome */
-                z-index:1052;
+                z-index: 1052;
             }
         }
     }
@@ -815,10 +837,7 @@ ul.social-buttons {
     }
 }
 
-
-
 // Highlight Color Customization
-
 ::-moz-selection {
     text-shadow: none;
     background: @theme-primary;
@@ -842,14 +861,14 @@ body {
 }
 
 @media (max-width: 400px) {
-  header {
-    background-attachment: scroll;
-    background-size: cover;
-  }
+    header {
+        background-attachment: scroll;
+        background-size: cover;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .middleItem {
-    margin-left: 25%!important;
-  }
+    .middleItem {
+        margin-left: 25% !important;
+    }
 }

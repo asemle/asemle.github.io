@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Agency v3.3.7+1 (http://startbootstrap.com/template-overviews/agency)
- * Copyright 2013-2017 Start Bootstrap
+ * Copyright 2013-2018 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 .canvas {
@@ -204,7 +204,7 @@ body {
   color: #CC8800;
 }
 p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.75;
 }
 p.large {
@@ -340,10 +340,10 @@ fieldset[disabled] .btn-xl.active {
   background-color: white;
 }
 .btn-xl:focus {
-  background: none!important;
+  background: none !important;
 }
 .navbar-custom {
-  background-color: #346758;
+  background-color: black;
   opacity: 0.97;
   border-color: transparent;
 }
@@ -430,7 +430,7 @@ fieldset[disabled] .btn-xl.active {
 }
 @media (min-width: 768px) {
   .navbar-custom.affix {
-    background-color: #346758;
+    background-color: black;
     padding: 10px 0;
   }
   .navbar-custom.affix .navbar-brand {
@@ -438,6 +438,10 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 header {
+  border-bottom: 10px groove grey;
+  border-top: 10px ridge grey;
+  border-left: 5px solid #2C2C2C;
+  border-right: 5px solid #2C2C2C;
   background-image: url('../img/header-bg.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -477,7 +481,7 @@ header .btn-xl:hover {
   background: none;
 }
 header .btn-xl:focus {
-  background-color: none!important;
+  background-color: none !important;
 }
 @media (min-width: 768px) {
   header {
@@ -530,6 +534,12 @@ section h3.section-subheading {
 .service-heading {
   margin: 15px 0;
   text-transform: none;
+}
+#portfolio {
+  border-left: 5px solid #2c2c2c;
+  border-right: 5px solid #2c2c2c;
+  border-bottom: 10px groove grey;
+  border-top: 10px ridge grey;
 }
 #portfolio h2.section-heading {
   color: #CC8800;
@@ -776,8 +786,24 @@ section h3.section-subheading {
 #simon {
   text-align: center;
   line-height: normal;
+  border-bottom: 10px groove grey;
+  border-top: 10px ridge grey;
+  border-left: 5px solid #2c2c2c;
+  border-right: 5px solid #2c2c2c;
+}
+#skills {
+  background-color: #ededed;
+}
+#skills p {
+  font-size: 20px;
+  line-height: 1.75;
+  margin-bottom: 50px;
+}
+#skills h4 {
+  font-size: 22px;
 }
 aside.clients {
+  background-color: #ededed;
   padding: 50px 0 50px 0;
   text-align: center;
 }
@@ -794,7 +820,7 @@ aside.clients img {
   max-width: 100%;
 }
 section#contact {
-  background-color: #346758;
+  background-color: black;
   background-image: url('../img/map-image.png');
   background-position: center;
   background-repeat: no-repeat;
@@ -849,6 +875,7 @@ section#contact .text-danger {
   color: #e74c3c;
 }
 footer {
+  background-color: grey;
   padding: 1px 0;
   text-align: center;
 }
@@ -866,16 +893,17 @@ footer ul.quicklinks {
   text-transform: none;
 }
 ul.social-buttons {
-  text-align: right;
   margin-bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
 }
 ul.social-buttons li a {
   line-height: 36px;
   display: block;
-  background-color: #346758;
+  background-color: black;
   height: 37px;
-  width: 37px;
-  border-radius: 15%;
+  width: 45px;
+  border-radius: 10%;
   font-size: 20px;
   color: white;
   outline: none;
@@ -993,6 +1021,6 @@ body {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .middleItem {
-    margin-left: 25%!important;
+    margin-left: 25% !important;
   }
 }
