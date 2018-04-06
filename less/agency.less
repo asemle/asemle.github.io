@@ -212,6 +212,12 @@ h6 {
     }
 }
 
+.decolines {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+} 
 // Navbar Change on Scroll
 @media(min-width:768px) {
     .navbar-custom.affix {
@@ -224,10 +230,10 @@ h6 {
 }
 
 header {
-    border-bottom: 10px groove grey;
-    border-top: 10px ridge grey;
-    border-left: 5px solid #2C2C2C;
-    border-right: 5px solid #2C2C2C;
+    border-bottom: 5px groove grey;
+    border-top: 5px ridge grey;
+    border-left: 2px solid #2C2C2C;
+    border-right: 2px solid #2C2C2C;
     background-image: url('../img/header-bg.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -330,10 +336,10 @@ section {
 
 // Portfolio Section
 #portfolio {
-    border-left: 5px solid #2c2c2c;
-    border-right: 5px solid #2c2c2c;
-    border-bottom: 10px groove grey;
-    border-top: 10px ridge grey;
+    border-left: 2px solid #2c2c2c;
+    border-right: 2px solid #2c2c2c;
+    border-bottom: 5px groove grey;
+    border-top: 5px ridge grey;
     h2.section-heading {
         color: #CC8800;
     }
@@ -601,10 +607,10 @@ section {
 #simon {
     text-align: center;
     line-height: normal;
-    border-bottom: 10px groove grey;
-    border-top: 10px ridge grey;
-    border-left: 5px solid #2c2c2c;
-    border-right: 5px solid #2c2c2c;
+    border-bottom: 5px groove grey;
+    border-top: 5px ridge grey;
+    border-left: 2px solid #2c2c2c;
+    border-right: 2px solid #2c2c2c;
 }
 
 // .team-member {
@@ -657,6 +663,7 @@ aside.clients {
 
 // Contact Section
 section#contact {
+    position: relative;
     background-color: black;
     background-image: url('../img/map-image.png');
     background-position: center;
@@ -710,6 +717,7 @@ section#contact {
 
 // Footer
 footer {
+    border-top: 5px groove grey;
     background-color: grey;
     padding: 1px 0;
     text-align: center;

@@ -79,7 +79,7 @@ app.post('/contact', function (req, res) {
        //Email not sent
        if (error) {
            console.log(error);
-           res.send(false);
+           res.send(console.log(error));
        } else {
          console.log('Message sent:' + response)
          res.send(true)

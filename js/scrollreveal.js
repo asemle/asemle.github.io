@@ -19,4 +19,5 @@ sr.reveal('#backend', {origin: 'right', distance: '100vw'});
     sr.reveal('.flipup', { duration: 2000, distance: '0', rotate: { x: -90, y: 0, z: 0 }, scale: 0.8 })
 
     sr.reveal('.social-buttons', { duration: 2000, distance: '0', scale:0.01})
+
 })
