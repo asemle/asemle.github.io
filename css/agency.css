@@ -194,8 +194,11 @@ button:active {
   }
 }
 body {
-  overflow-x: hidden;
+  overflow: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+div.bodywrap {
+  overflow: hidden;
 }
 .text-muted {
   color: #777777;
