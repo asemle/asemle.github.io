@@ -194,7 +194,6 @@ button:active {
   }
 }
 body {
-  overflow: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 div.bodywrap {
