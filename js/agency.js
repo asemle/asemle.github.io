@@ -35,10 +35,14 @@
     var scrolling = false;
     $('header').mousemove(function( event ) {
       if(!scrolling) {
-      var containerWidth = $(this).innerWidth(),
+      var containerWidth = $(this).width(),
       containerHeight = $(this).innerHeight(),
       mousePositionX = (event.pageX / containerWidth) * 100,
       mousePositionY = (event.pageY / containerHeight) * 100;
+      if(mousePositionX > 100) {
+        mousePositionX = 100;
+      }
+
       $(this).css('background-position', mousePositionX + '%' + ' ' + mousePositionY + '%');
       }
     });
