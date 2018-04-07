@@ -345,7 +345,7 @@ fieldset[disabled] .btn-xl.active {
   background: none !important;
 }
 .navbar-custom {
-  background-color: black;
+  background-color: #020022;
   opacity: 0.97;
   border-color: transparent;
 }
@@ -440,11 +440,11 @@ fieldset[disabled] .btn-xl.active {
 .decolineleft,
 .decolinetop {
   position: absolute;
-  background: #2C2C2C;
+  background: #001866;
 }
 @media (min-width: 768px) {
   .navbar-custom.affix {
-    background-color: black;
+    background-color: #020022;
     padding: 10px 0;
   }
   .navbar-custom.affix .navbar-brand {
@@ -835,7 +835,7 @@ aside.clients img {
 }
 section#contact {
   position: relative;
-  background-color: black;
+  background-color: #020022;
   background-position: center;
   background-repeat: no-repeat;
 }
