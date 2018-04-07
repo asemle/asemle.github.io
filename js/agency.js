@@ -13,7 +13,7 @@
     });
 
     // Highlight the top nav as scrolling occurs
-    var foo = $(".intro-lead-in").offset().top;
+    var foo = $(".intro-heading").offset().top;
 
     $('body').scrollspy({
         target: '.navbar-fixed-top',
