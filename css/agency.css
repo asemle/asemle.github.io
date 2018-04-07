@@ -441,6 +441,7 @@ fieldset[disabled] .btn-xl.active {
 }
 .decolineleft,
 .decolinetop {
+  z-index: 0;
   position: absolute;
   background: #001866;
 }
@@ -473,7 +474,6 @@ header .intro-text {
 }
 header .intro-text .intro-lead-in {
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-style: italic;
   font-size: 22px;
   line-height: 22px;
   margin-bottom: 25px;
@@ -844,13 +844,17 @@ section#contact {
 }
 section#contact .section-heading {
   color: white;
+  -webkit-transform: translate3d(0, 0, 0);
+  z-index: 5;
 }
 section#contact .form-group {
   margin-bottom: 25px;
 }
 section#contact .form-group input,
 section#contact .form-group textarea {
+  -webkit-transform: translate3d(0, 0, 0);
   padding: 20px;
+  z-index: 5;
 }
 section#contact .form-group input.form-control {
   height: auto;
@@ -912,10 +916,11 @@ footer ul.quicklinks {
 }
 ul.social-buttons {
   margin-bottom: 0;
-  display: flex;
+  display: inline-flex;
   justify-content: space-evenly;
 }
 ul.social-buttons li a {
+  pointer-events: initial;
   line-height: 36px;
   display: block;
   height: 37px;
@@ -928,11 +933,12 @@ ul.social-buttons li a {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
+  margin: 8px;
 }
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-  background-color: #CC8800;
+  color: #CC8800;
   text-decoration: none;
   border-radius: 25%;
 }

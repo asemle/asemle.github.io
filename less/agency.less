@@ -224,6 +224,7 @@ h6 {
 
 .decolineleft,
 .decolinetop {
+    z-index: 0;
     position: absolute;
     background: #001866;
 }
@@ -257,7 +258,6 @@ header {
         padding-bottom: 50px;
         .intro-lead-in {
             .serif-font;
-            font-style: italic;
             font-size: 22px;
             line-height: 22px;
             margin-bottom: 25px;
@@ -680,12 +680,16 @@ section#contact {
     background-repeat: no-repeat;
     .section-heading {
         color: white;
+        -webkit-transform: translate3d(0, 0, 0);
+        z-index: 5;
     }
     .form-group {
         margin-bottom: 25px;
         input,
         textarea {
+            -webkit-transform: translate3d(0, 0, 0);
             padding: 20px;
+            z-index: 5;
         }
         input.form-control {
             height: auto;
@@ -747,10 +751,11 @@ footer {
 // Social Buttons
 ul.social-buttons {
     margin-bottom: 0;
-    display: flex;
+    display: inline-flex;
     justify-content: space-evenly;
     li {
         a {
+            pointer-events: initial;
             line-height: 36px;
             display: block;
             height: 37px;
@@ -763,10 +768,11 @@ ul.social-buttons {
             -webkit-transition: all 0.3s;
             -moz-transition: all 0.3s;
             transition: all 0.3s;
+            margin: 8px;
             &:hover,
             &:focus,
             &:active {
-                background-color: @theme-primary;
+                color: @theme-primary;
                 text-decoration: none;
                 border-radius: 25%;
             }
