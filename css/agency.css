@@ -345,6 +345,7 @@ fieldset[disabled] .btn-xl.active {
   background: none !important;
 }
 .navbar-custom {
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.3);
   background-color: #020022;
   opacity: 0.97;
   border-color: transparent;
@@ -412,6 +413,7 @@ fieldset[disabled] .btn-xl.active {
 @media (min-width: 768px) {
   .navbar-custom {
     background-color: transparent;
+    box-shadow: none;
     padding: 25px 0;
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
@@ -444,6 +446,7 @@ fieldset[disabled] .btn-xl.active {
 }
 @media (min-width: 768px) {
   .navbar-custom.affix {
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.3);
     background-color: #020022;
     padding: 10px 0;
   }
