@@ -34,6 +34,7 @@
     if($(window).width() > 500) {
     var scrolling = false;
     $('header').mousemove(function( event ) {
+      console.log('tjjt')
       if(!scrolling) {
       var containerWidth = $(this).width(),
       containerHeight = $(this).innerHeight(),
@@ -46,6 +47,10 @@
       $(this).css('background-position', mousePositionX + '%' + ' ' + mousePositionY + '%');
       }
     });
+    
+    $('header').click(function() {
+      console.log("heyyy")
+    })
 
     $(window).scroll(function() {
     clearTimeout($.data(this, 'scrollTimer'));
