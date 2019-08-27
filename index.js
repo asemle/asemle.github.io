@@ -20,7 +20,7 @@ app.post('/contact', function (req, res) {
   const msg = {
     to: process.env.workemail,
     from: req.body.email,
-    subject: req.body.name + 'contacted you from asemle.site!',
+    subject: req.body.name + ' contacted you from asemle.site!',
     html: '<p>' + req.body.message + '</p> <br>' + '<b>' + req.body.email + '</b> <br> <b>' + req.body.phone + '</b>',
   };
   sgMail.send(msg, (error, result) => {
