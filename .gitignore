@@ -1,3 +1,5 @@
 node_modules
 /vendor/
 things
+sendgrid.env
+.env
